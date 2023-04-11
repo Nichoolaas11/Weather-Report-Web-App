@@ -35,7 +35,7 @@ def getweather(city):
         print("error in search !")
 
 
-# Function for HISTORICAL DATA
+#historical data
 def get_hist_data(lat,lon,start):
     res = requests.get(url_1.format(lat,lon,start,api_key))
     data = res.json()
@@ -45,7 +45,7 @@ def get_hist_data(lat,lon,start):
         temp.append(t)     
     return data , temp
 
-# Let's write the Application
+###
 
 st.header('Weather Report')   
 
